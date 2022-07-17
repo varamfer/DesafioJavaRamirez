@@ -11,7 +11,7 @@ import java.util.Date;
 public class ClienteEntity {
 
     @Id
-    @Column(name = "id")
+    @Column(name = "idcliente")
     private Long idcliente;
 
     @Column(name = "NOMBRE")
@@ -21,7 +21,7 @@ public class ClienteEntity {
     private String apellido;
 
     @Column(name = "DOCUMENTO")
-    private Integer documento;
+    private Long documento;
 
     //Getters and Setters
 
@@ -41,11 +41,11 @@ public class ClienteEntity {
         this.apellido = apellido;
     }
 
-    public Integer getDocumento() {
+    public Long getDocumento() {
         return documento;
     }
 
-    public void setDocumento(Integer documento) {
+    public void setDocumento(Long documento) {
         this.documento = documento;
     }
 
@@ -53,7 +53,7 @@ public class ClienteEntity {
         return idcliente;
     }
 
-    public void setId(int id) {
+    public void setId(long idcliente) {
         this.idcliente = idcliente;
     }
 
@@ -64,12 +64,12 @@ public class ClienteEntity {
                 "nombre='" + nombre + '\'' +
                 ", apellido='" + apellido + '\'' +
                 ", documento=" + documento +
-                ", id=" + idcliente +
+                ", idcliente=" + idcliente +
                 '}';
     }
 
     //Constructor
-    public ClienteEntity(String nombre, String apellido, Integer documento, Long idcliente) {
+    public ClienteEntity(String nombre, String apellido, Long documento, Long idcliente) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.documento = documento;
