@@ -1,0 +1,9 @@
+DROP TABLE CLIENTE IF EXISTS ;
+
+CREATE TABLE CLIENTE (
+nombre VARCHAR(50),
+apellido VARCHAR(50),
+fecha_nacimiento DATE,
+id LONG,
+PRIMARY KEY (id)
+)
