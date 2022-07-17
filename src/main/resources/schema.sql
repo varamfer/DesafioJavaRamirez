@@ -1,9 +1,9 @@
 DROP TABLE CLIENTE IF EXISTS ;
 
 CREATE TABLE CLIENTE (
-nombre VARCHAR(50),
-apellido VARCHAR(50),
-fecha_nacimiento DATE,
-id LONG,
-PRIMARY KEY (id)
+nombre VARCHAR(255),
+apellido VARCHAR(255),
+documento INT,
+idcliente INT NOT NULL AUTO_INCREMENT,
+PRIMARY KEY (idcliente)
 )

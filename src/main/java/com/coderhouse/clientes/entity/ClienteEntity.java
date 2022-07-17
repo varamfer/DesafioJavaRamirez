@@ -12,7 +12,7 @@ public class ClienteEntity {
 
     @Id
     @Column(name = "id")
-    private long id;
+    private Long idcliente;
 
     @Column(name = "NOMBRE")
     private String nombre;
@@ -20,8 +20,8 @@ public class ClienteEntity {
     @Column(name = "APELLIDO")
     private String apellido;
 
-    @Column(name = "fecha_nacimiento")
-    private Date fecha_nacimiento;
+    @Column(name = "DOCUMENTO")
+    private Integer documento;
 
     //Getters and Setters
 
@@ -41,20 +41,20 @@ public class ClienteEntity {
         this.apellido = apellido;
     }
 
-    public Date getFecha_nacimiento() {
-        return fecha_nacimiento;
+    public Integer getDocumento() {
+        return documento;
     }
 
-    public void setFecha_nacimiento(Date fecha_nacimiento) {
-        this.fecha_nacimiento = fecha_nacimiento;
+    public void setDocumento(Integer documento) {
+        this.documento = documento;
     }
 
     public long getId() {
-        return id;
+        return idcliente;
     }
 
-    public void setId(long id) {
-        this.id = id;
+    public void setId(int id) {
+        this.idcliente = idcliente;
     }
 
     //To String del objeto
@@ -63,17 +63,17 @@ public class ClienteEntity {
         return "ClienteEntity{" +
                 "nombre='" + nombre + '\'' +
                 ", apellido='" + apellido + '\'' +
-                ", fecha_nacimiento=" + fecha_nacimiento +
-                ", id=" + id +
+                ", documento=" + documento +
+                ", id=" + idcliente +
                 '}';
     }
 
     //Constructor
-    public ClienteEntity(String nombre, String apellido, Date fecha_nacimiento, long id) {
+    public ClienteEntity(String nombre, String apellido, Integer documento, Long idcliente) {
         this.nombre = nombre;
         this.apellido = apellido;
-        this.fecha_nacimiento = fecha_nacimiento;
-        this.id = id;
+        this.documento = documento;
+        this.idcliente = idcliente;
     }
 
     //Constructor vacio

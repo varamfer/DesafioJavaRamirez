@@ -1,5 +1,4 @@
-INSERT INTO CLIENTE(nombre, apellido, fecha_nacimiento, id)
-values ( 'Valentina', 'Ramirez', '2090-07-30', 1);
-
+INSERT INTO CLIENTE(nombre, apellido, documento, idcliente)
+values ( 'Valentina', 'Ramirez', 2, 1);
 
 

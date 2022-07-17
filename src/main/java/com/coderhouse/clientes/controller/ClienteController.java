@@ -21,8 +21,8 @@ public class ClienteController {
     }
 
     @GetMapping("/{id}")
-    public ClienteEntity buscarClientePorId (@PathVariable Long id) {
-        return clienteService.buscarPorId(id);
+    public ClienteEntity buscarClientePorId (@PathVariable Long idcliente) {
+        return clienteService.buscarPorId(idcliente);
     }
 
     @PostMapping("/actualizar")

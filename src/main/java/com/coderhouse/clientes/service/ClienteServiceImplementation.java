@@ -14,8 +14,8 @@ public class ClienteServiceImplementation implements ClienteService{
     private ClienteRepository clienteRepository;
 
     @Override
-    public ClienteEntity buscarPorId(Long id) {
-        return clienteRepository.findById(id).orElse(null);
+    public ClienteEntity buscarPorId(Long idcliente) {
+        return clienteRepository.findById(idcliente).orElse(null);
     }
     @Override
     public List<ClienteEntity> buscarTodos() {

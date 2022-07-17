@@ -7,7 +7,7 @@ import java.util.List;
 public interface ClienteService {
     List<ClienteEntity> buscarTodos();
 
-    ClienteEntity buscarPorId(Long id);
+    ClienteEntity buscarPorId(Long idcliente);
 
     ClienteEntity crearCliente (ClienteEntity cliente) throws Exception;
 
