@@ -20,7 +20,7 @@ public class FacturaEntity {
     private Float precio;
 
     @ManyToOne
-    @JoinColumn(name="clienteid")
+    @JoinColumn(name="idcliente")
     private ClienteEntity cliente;
 
     //Getters and Setters
