@@ -13,7 +13,7 @@ CREATE TABLE PRODUCTO (
     codigo int NOT NULL,
     detalle varchar(255),
     cantidad int,
-    precio FLOAT(7, 2),
+    precio FLOAT,
     PRIMARY KEY (idproducto)
 );
 
